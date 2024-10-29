@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar CV - Soluciona Multinacional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+            max-width: 600px;
+        }
+
+        .logo {
+            width: 70px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .brand-text {
+                display: none;
+                /* Oculta el texto en pantallas pequeñas */
+            }
+
+            .navbar-brand {
+                display: flex;
+                /* Asegura que el logo esté centrado */
+                justify-content: center;
+                /* Centra el contenido */
+                align-items: center;
+                /* Alinea verticalmente */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-center" href="#" aria-label="Calzado Familiar">
+                <img src="img/image.png" alt="Calzado Familiar Logo" class="logo" loading="lazy">
+                <span class="brand-text">Consultora multinacional (CHL - COL - VEN - MEX - BR)</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Formulario de Envío de CV -->
+    <div class="container mt-5">
+        <h1 class="text-center">Descripción del Cargo: Desarrollador Fullstack</h1>
+    
+        <p>
+            Buscamos un Desarrollador Fullstack apasionado y motivado para unirse a nuestro equipo. El candidato ideal debe tener experiencia en el desarrollo de aplicaciones web utilizando tecnologías modernas y ser capaz de trabajar tanto en el frontend como en el backend.
+        </p>
+    
+        <h2>Responsabilidades</h2>
+        <ul>
+            <li>Desarrollar aplicaciones web utilizando Node.js, HTML, CSS y JavaScript.</li>
+            <li>Implementar y gestionar bases de datos utilizando Sequelize y PostgreSQL.</li>
+            <li>Crear y mantener APIs RESTful para la comunicación entre el frontend y el backend.</li>
+            <li>Colaborar con diseñadores y otros desarrolladores para mejorar la experiencia del usuario.</li>
+            <li>Realizar pruebas y depuración de aplicaciones para garantizar su funcionalidad.</li>
+            <li>Participar en revisiones de código y contribuir a la mejora continua del equipo.</li>
+        </ul>
+    
+        <h2>Requisitos Técnicos</h2>
+        <ul>
+            <li>Experiencia sólida en Node.js y su ecosistema.</li>
+            <li>Dominio de HTML, CSS y JavaScript (ECMAScript 5 y 6).</li>
+            <li>Conocimiento en el uso de Bootstrap para el desarrollo de interfaces responsivas.</li>
+            <li>Experiencia en el uso de Sequelize para la gestión de bases de datos PostgreSQL.</li>
+            <li>Familiaridad con control de versiones usando Git, GitHub y GitLab.</li>
+            <li>Conocimiento en el desarrollo de APIs RESTful.</li>
+        </ul>
+    
+        <h2>Habilidades Blandas</h2>
+        <ul>
+            <li>Excelentes habilidades de comunicación y trabajo en equipo.</li>
+            <li>Capacidad para resolver problemas de manera efectiva.</li>
+            <li>Adaptabilidad y disposición para aprender nuevas tecnologías.</li>
+            <li>Gestión del tiempo y organización en el trabajo.</li>
+            <li>Actitud proactiva y enfoque en resultados.</li>
+        </ul>
+    
+        <p>
+            Si cumples con los requisitos mencionados y estás listo para asumir nuevos retos, ¡te invitamos a postularte y unirte a nuestro equipo!
+        </p>
+    </div>
+    <div class="container">
+        <h2 class="text-center">Enviar tu CV</h2>
+        <form action="/enviar-cv" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="nombre" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="message" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="cv" class="form-label">Adjuntar CV</label>
+                <input type="file" class="form-control" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar CV</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
