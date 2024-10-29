@@ -1,5 +1,8 @@
 {
-  "rewrites": [{
-    "source": "/(.*)", "destination": "/src/server.js"
-  }]
+  "rewrites": [
+    {"source": "/enviar-cv", "destination": "/src"},
+    {"source": "/", "destination": "/src"}],
+    "redirects": [
+        { "source": "/", "destination": "/home" }
+    ]
 }

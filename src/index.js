@@ -74,11 +74,11 @@ const sendEmail = (transporter, mailOptions, res) => {
 };
 
 // Iniciar el servidor
-app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
-});
+// app.listen(PORT, () => {
+//     console.log(`Servidor corriendo en http://localhost:${PORT}`);
+// });
 
-
+export default app
 
 
 
